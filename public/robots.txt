@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://projectregro.com/sitemap.xml

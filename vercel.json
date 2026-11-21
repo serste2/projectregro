@@ -1,0 +1,28 @@
+{
+  "framework": null,
+  "outputDirectory": "public",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/regr%C3%B2-%26-regroers",
+      "destination": "/regroers",
+      "permanent": true
+    },
+    {
+      "source": "/regrò-&-regroers",
+      "destination": "/regroers",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap.website.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    }
+  ]
+}
