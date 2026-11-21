@@ -25,3 +25,17 @@ if (dialog && typeof dialog.showModal === 'function') {
     if (event.key === 'ArrowRight') show(current + 1);
   });
 }
+
+document.querySelectorAll('[data-more]').forEach((button) => {
+  const gallery = button.previousElementSibling;
+  const extra = [...gallery.querySelectorAll('a')].slice(20);
+  if (!extra.length) return;
+  function expand(open) {
+    extra.forEach((link) => { link.hidden = !open; });
+    button.setAttribute('aria-expanded', String(open));
+    button.textContent = open ? 'Show Less' : 'Show More';
+  }
+  expand(false);
+  button.hidden = false;
+  button.addEventListener('click', () => expand(button.getAttribute('aria-expanded') !== 'true'));
+});

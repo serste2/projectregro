@@ -23,6 +23,11 @@
       "source": "/sitemap.website.xml",
       "destination": "/sitemap.xml",
       "permanent": true
+    },
+    {
+      "source": "/ata/territorio",
+      "destination": "/ata-documentation",
+      "permanent": true
     }
   ]
 }
